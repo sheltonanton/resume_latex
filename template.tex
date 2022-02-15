@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Infant Antony}{Shelton}{ \urlstyle{same}
++91 7904315903 | \href{mailto:sheltonanton@gmail.com}{sheltonanton@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{PSVP Engineering College}
+\descript{B.E. in Mech. Engineering}
+\location{May 2018 | Chennai, IN}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/sheltonanton}{\bf sheltonanton} \\
+LinkedIn://  \href{https://www.linkedin.com/in/infant-antony-shelton/}{\bf infant-antony-shelton} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Udacity}
+Artificial Intelligence for Robotics \\
+Browser Rendering Optimization \\
+JavaScript Design Patterns \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\subsection{TRADE ENGINE}
+\location{Python \textbullet{} JavaScript \textbullet{} MongoDB \textbullet{} EmberJs}
+\begin{itemize}
+\item Web application which created strategies from indicators
+\item Implemented back-testing engine and python trade engine handling 200 stocks at a time
+\end{itemize}
+Github link: \href{https://github.com/sheltonanton/stockmarketautomation}{\bf sheltonanton/stockmarketautomation} \\
+\sectionsep
+\subsection{TASK MANAGER}
+\location{React \textbullet{} ExpressJs \textbullet{} MongoDB \textbullet{}}
+\begin{itemize}
+    \item Used Topological Sort to order the tasks with network of dependencies
+    \item Identify critical connections in the task and priority in solving critical connections first
+\end{itemize}
+Github link: \\
+\href{https://github.com/sheltonanton/task_manager}{\bf sheltonanton/task\_manager} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+JavaScript \textbullet{}   Java \textbullet{} Python \textbullet{} HTML and CSS \\
+\location{Over 1000 lines:}
+C \textbullet{} Ruby \textbullet{} Ruby on Rails \textbullet{} MySQL \\
+\location{Familiar:}
+Spark \textbullet{} Elasticsearch \textbullet{} Android \textbullet{} MongoDB
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{PRAMATA KNOWLEDGE SOLUTIONS PVT LTD}
+\descript{| Software Engineer }
+\location{Sep 2021 - Present | Bangalore, IN}
+\vspace{\topsep}
+\begin{itemize}
+\item Migrated legacy Google analytics to Google Tag Manager implementation
+\item Contributed ideas and suggestions in team meetings and delivered updates on deadlines, designs and enhancements
+\end{itemize}
+\sectionsep
+
+\runsubsection{DELHIVERY}
+\descript{| Developer }
+\location{Dec 2020 – Sep 2021 | Hyderabad, IN}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{itemize}
+\item Collaborated with other developers to identify and alleviate software errors and inefficiencies
+\item Planned and developed spark job with daily execution for measuring performance of warehouse employees and truck drivers in average
+\item Tuned performance of spark job from 30 minutes to 5 minutes time execution by effective use of dataframes and methods like shuffling, re-partition and multi-threaded UDFs wherever required
+\item Developed APIs to deliver performance metrics of employees to client with Flask for managerial reference
+\item Collaborated with warehouse managers and data-collection team to migrate the services based on single type of vehicle system to detachable vehicles with containers
+\end{itemize}
+\sectionsep
+
+\runsubsection{ZOHO CORPORATION PVT LTD}
+\descript{| Member of Technical Staff }
+\location{Jun 2018 – Jul 2019 | Chennai, IN}
+\begin{itemize}
+\item Mentored three interns to get incubated them into the team
+\item Collaborated and Migrated front end system from JSP to EmberJs
+\item Contributed and then maintained module of more than 15 front-end components bridging gap between the pure Js components and two different project teams
+\item Resolved configuration bugs and fixes from support team
+\item Planned and decoupled request/response layer from presentation layer, to be maintained in a centralized way. Honored caching within the layer to improve page-load performance by 1.5x
+\item Modularised single fetch nested resources into separate resources with relationships, based on REST API standards
+\item Documented the best practices to undertake while developing based on the centralized req/res layer for two project teams
+\end{itemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Projects}
+% \runsubsection{Trade Engine}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
